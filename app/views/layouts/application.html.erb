@@ -12,6 +12,6 @@
 
     <body>
         <%= render template: "shared/_navbar" %>
-        <div class="container"><%= yield %></div>
+        <div class="container"><%= render template: "shared/_flash" %> <%= yield %></div>
     </body>
 </html>
