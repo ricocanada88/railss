@@ -1,0 +1,19 @@
+<h1>Sing Ups</h1>
+
+<%= form_with model: @user, url: registers_path do |form| %>
+    <div class="mb-3">
+        <%= form.label :email %>
+        <%= form.text_field :email, class: "form-control", placeholder: "johndoe@gmail.com" %>
+    </div>
+
+    <div class="mb-3">
+        <%= form.label :password %>
+        <%= form.text_field :password, class: "form-control", placeholder: "password" %>
+    </div>
+
+    <div class="mb-3">
+        <%= form.label :password_confirmation %>
+        <%= form.text_field :password_confirmation, class: "form-control", placeholder: "password" %>
+    </div>
+    <%= form.submit "Sign up", class: "btn btn-primary" %>
+<% end %>

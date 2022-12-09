@@ -5,5 +5,7 @@ Rails.application.routes.draw do
 
   get '/about', to: 'abouts#index', as: :about
 
-
+  get '/sing-up', to: 'registers#new', as: :register
+  post '/sing-up', to: 'registers#create', as: :registers
+  # post '/sing-up', to: 'registers#create', as: :register_create
 end
